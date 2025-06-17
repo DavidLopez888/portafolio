@@ -19,12 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         
         if (currentTheme === 'dark') {
-            console.log('Switching to light theme');
             document.documentElement.removeAttribute('data-theme');
             icon.classList.replace('fa-sun', 'fa-moon');
             localStorage.setItem('theme', 'light');
         } else {
-            console.log('Switching to dark theme');
             document.documentElement.setAttribute('data-theme', 'dark');
             icon.classList.replace('fa-moon', 'fa-sun');
             localStorage.setItem('theme', 'dark');

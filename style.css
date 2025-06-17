@@ -33,7 +33,6 @@ i, .fas, .fab {
     transition: color 0.3s ease;
 }
 
-
 [data-theme="dark"] .download-btn {
     background-color: var(--secondary-color);
     color: #121212; /* Texto oscuro para mejor contraste */
@@ -41,6 +40,16 @@ i, .fas, .fab {
 
 [data-theme="dark"] .download-btn:hover {
     background-color: #3498db;
+}
+
+.download-btn.generating {
+    background-color: var(--secondary-color) !important;
+    cursor: wait;
+}
+
+/* Animación del spinner */
+.fa-spinner {
+    margin-right: 8px;
 }
 
 /* Estilos base */
@@ -448,3 +457,4 @@ footer .contact-item i {
     color: var(--primary-color);
     text-decoration: underline;
 }
+
