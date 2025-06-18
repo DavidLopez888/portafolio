@@ -7,7 +7,7 @@
     --bg-color: #f8f9fa;
     --card-bg: #ffffff;
     --border-color: #e9ecef;
-    --text-light: #6c757d;
+    --text-light: #333;
     --white: #ffffff;
     --dark-gray: #6c757d;
     --medium-gray: #e9ecef;
@@ -21,7 +21,7 @@
     --bg-color: #1A202C;
     --card-bg: #393939; /* Fondo de las tarjetas - en este caso Idiomas */
     --border-color: #ffffff; /* barrita abajo del menu */
-    --text-light: #8f8f8f; /* Texto selecionado menu */
+    --text-light: #b4b4b4; /* Texto selecionado menu */
     --white: #393939; /* cuadros para textos y borde de la foto y textos en pie de pagina */
     --dark-gray: #ffffff; /* fechas de las experiencias */
     --medium-gray: #333;
@@ -458,3 +458,32 @@ footer .contact-item i {
     text-decoration: underline;
 }
 
+
+.techstack-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.techstack-grid h4 {
+  margin: 8px 0 4px;
+  font-weight: bold;
+}
+.techstack-grid p {
+  margin: 0;
+  /* color: #444; */
+  color: var(--text-light);
+}
+
+.languages-container ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+
+.custom-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-bullets li::before {
+  content: '';
+}
