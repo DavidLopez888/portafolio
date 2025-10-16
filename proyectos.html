@@ -1,0 +1,86 @@
+<!-- proyectos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyectos | David López</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/tu-key-aqui.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+<header>
+  <nav>
+    <a href="index.html">Resumen</a>
+    <a href="proyectos.html" class="active">Proyectos</a>
+  </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+</header>
+        <script src="script.js"></script>
+<main>
+  <section id="projects"> 
+
+    <!-- ## Proyectos Personales / Personal Projects -->
+    <section class="languages-section">
+
+    <h3><i class="fas fa-flask"></i> Proyectos</h3>
+    <div class="languages-container">
+        <ul class="custom-bullets">    
+
+
+          <div class="project-card">
+          <h4>📡 Proyecto: Plataforma de eventos deportivos en vivo
+            <div class="experience-company" style="margin-top: 12px;">
+              <a href="https://hdport.es" target="_blank" rel="noopener noreferrer">
+                🌐 HDport.es <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 4px;"></i>
+              </a>
+            </div>
+          </h4>
+
+          <p><strong>Descripción general:</strong> Sistema completo de captura, procesamiento y visualización de eventos deportivos en vivo, desplegado en AWS y desarrollado con tecnologías serverless, web y automatización con Python.</p>
+
+          <img src="assets/scraper_diagram.png" alt="Diagrama del scraper" style="width: 100%; max-width: 600px; margin-bottom: 16px; border-radius: 8px;" />
+
+          <h4>🔧 Tecnologías usadas</h4>
+          <ul>
+            <li><strong>Scraping:</strong> Python, Selenium, BeautifulSoup, Playwright</li>
+            <li><strong>Automatización:</strong> AWS EC2, ejecución programada vía cron / script bash</li>
+            <li><strong>Procesamiento:</strong> FuzzyWuzzy, JSON, urllib, datetime, logging</li>
+            <li><strong>Almacenamiento:</strong> AWS DynamoDB (estructura tipo documento)</li>            
+            <li><strong>Frontend:</strong> HTML, CSS, JavaScript (dinámico y responsivo)</li>
+            <li><strong>Visualización:</strong> Datos renderizados en tiempo real con imágenes, banderas, logos y enlaces</li>
+            <li><strong>Notificaciones:</strong> Integración con Telegram para alertas en tiempo real</li>
+          </ul>
+
+          <h4>📌 Funcionalidades destacadas</h4>
+          <ul>
+            <li>Captura y procesamiento de datos deportivos desde más de 10 fuentes web distintas</li>
+            <li>Normalización de datos y eliminación de duplicados usando algoritmos de similitud (fuzzy)</li>
+            <li>Transformación del contenido en JSON para DynamoDB</li>
+            <li>Visualización adaptable con logos, banderas, y enlaces filtrables</li>
+            <li>Control de horarios según la zona horaria del usuario (con ajuste automático)</li>
+            <li>Alertas automáticas en Telegram al detectar nuevos eventos</li>
+            <li>Versión web responsiva, consumiendo directamente desde DynamoDB (JavaScript)</li>
+          </ul>
+
+        </div>
+          
+  </section>
+
+
+  <footer>
+    <div class="copyright">
+      Sin derechos reservados (CC0).
+    </div>
+  </footer>
+
+</main>
+</div>
+</body>
+
+</html>

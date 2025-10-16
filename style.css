@@ -414,6 +414,20 @@ footer .contact-item i {
     color: var(--text-light);
 }
 
+.project-card img {
+  display: block;
+  margin: 24px auto;
+  width: 100%;          
+  max-width: 850px;    
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15); 
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.02); 
+}
+
 
 /* Justificación tipo Word (sin división de palabras) */
 .profile-description,
